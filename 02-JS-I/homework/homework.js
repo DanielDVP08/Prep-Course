@@ -214,7 +214,7 @@ function esVocal(letra) {
     if (respuesta) {
       return "Es vocal";
     } else {
-      ("Dato incorrecto");
+      return "Dato incorrecto";
     }
   } else {
     return "Dato incorrecto";
