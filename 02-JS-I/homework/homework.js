@@ -211,8 +211,11 @@ function esVocal(letra) {
         break;
       }
     }
-    if (respuesta) return "Es vocal";
-    else "Dato incorrecto";
+    if (respuesta) {
+      return "Es vocal";
+    } else {
+      ("Dato incorrecto");
+    }
   } else {
     return "Dato incorrecto";
   }
