@@ -203,15 +203,15 @@ function esVocal(letra) {
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   const vocales = aeiouAEIOU;
-  let respuesta = false;
   if (letra.length < 2) {
-    for (const vocal of vocales) {
-      if (letra == vocal) {
-        respuesta = true;
-        break;
+    const validar = (vocal) => {
+      for (const v in vocal) {
+        if (letra == v) {
+          return true;
+        }
       }
-    }
-    if (respuesta) return "Es vocal";
+    };
+    if (validar(vocales)) return "Es vocal";
     else "Dato incorrecto";
   } else {
     return "Dato incorrecto";
